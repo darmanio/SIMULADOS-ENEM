@@ -48,3 +48,27 @@ export interface ImprovementPlan {
   weaknesses: string[];
   actionItems: string[];
 }
+
+export interface EssayTheme {
+  title: string;
+  contextTexts: string[];
+  instructions: string;
+}
+
+export interface EssayCompetency {
+  score: number; // 0 to 200
+  feedback: string;
+}
+
+export interface EssayCorrection {
+  totalScore: number;
+  competencies: {
+    c1: EssayCompetency; // Gramática
+    c2: EssayCompetency; // Repertório e Tema
+    c3: EssayCompetency; // Organização
+    c4: EssayCompetency; // Coesão
+    c5: EssayCompetency; // Proposta de Intervenção
+  };
+  generalAnalysis: string;
+  improvementTips: string[];
+}
