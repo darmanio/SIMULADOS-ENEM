@@ -1,0 +1,5 @@
+{
+  "name": "ENEM Master AI",
+  "description": "Um gerador inteligente de simulados do ENEM que cria questões personalizadas, monitora seu desempenho por tempo e fornece análises detalhadas de melhoria usando Inteligência Artificial.",
+  "requestFramePermissions": []
+}
